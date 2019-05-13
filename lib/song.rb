@@ -29,6 +29,8 @@ class Song
   end
   
   def genre_count
-    
+    sorted_hash = {}
+    roster.each { |key, value| sorted_hash[key] = value.sort }
+    return sorted_hash
   end
 end
