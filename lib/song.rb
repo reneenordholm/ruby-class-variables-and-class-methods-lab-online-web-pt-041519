@@ -41,8 +41,9 @@ class Song
           @@genre_count[@@genres[count]] += 1
         else  
           @@genre_count[@@genres[count]] = 1
+        end
+        count += 1
       end
-      count += 1
     return @@genre_count
   end
 end
