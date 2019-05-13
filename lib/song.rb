@@ -35,7 +35,7 @@ class Song
   #values = number of songs in genre
   
   def self.genre_count
-      @@genres.each { |key, value| @@genre_count[key] = @@genre_count.count[value] }
+      @@genres.each { |key, value| @@genre_count[key] = @@genre_count.count }
     return @@genre_count
   end
 end
