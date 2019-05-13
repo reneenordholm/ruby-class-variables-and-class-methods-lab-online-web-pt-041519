@@ -35,6 +35,9 @@ class Song
   #values = number of songs in genre
   
   def self.genre_count
+    count = 0
+      while count < @@genres.length
+      if 
       @@genres.each do |key, value| 
         
         @@genre_count[key] = @@genre_count.count
