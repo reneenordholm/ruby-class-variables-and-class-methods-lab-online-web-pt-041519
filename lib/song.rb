@@ -37,10 +37,10 @@ class Song
   def self.genre_count
     count = 0
       while count < @@genres.length
-      if @@genre_count[@@genres[count]]
-        @@genre_count[@@genres[count]] += 1
-      else  
-        @@genre_count[@@genres[count]] = 1
+        if @@genre_count[@@genres[count]]
+          @@genre_count[@@genres[count]] += 1
+        else  
+          @@genre_count[@@genres[count]] = 1
       end
       count += 1
     return @@genre_count
