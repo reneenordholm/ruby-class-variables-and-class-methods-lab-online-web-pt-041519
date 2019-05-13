@@ -44,7 +44,7 @@ class Song
         end
         count += 1
       end
-    return @@genre_count
+      return @@genre_count
   end
 end
 
