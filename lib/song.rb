@@ -16,7 +16,7 @@ class Song
     @@genres << genre
   end
   
-  def artists(array)
+  def artist(array)
     array.uniq
   end
 
