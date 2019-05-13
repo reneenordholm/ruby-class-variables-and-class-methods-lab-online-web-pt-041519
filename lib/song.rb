@@ -50,15 +50,15 @@ class Song
   
   def self.artist_count
   count = 0
-    while count < @@genres.length
-      if @@genre_count[@@genres[count]]
-        @@genre_count[@@genres[count]] += 1
+    while count < @@artists.length
+      if @@artist_count[@@artists[count]]
+        @@artist_count[@@artists[count]] += 1
       else  
-        @@genre_count[@@genres[count]] = 1
+        @@artist_count[@@artists[count]] = 1
       end
       count += 1
     end
-    return @@genre_count
+    return @@artist_count
   end
 end
 
