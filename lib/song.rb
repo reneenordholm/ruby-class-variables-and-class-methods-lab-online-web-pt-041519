@@ -61,7 +61,3 @@ class Song
     return @@artist_count
   end
 end
-
-
-
-      #@@genres.each { |key, value| @@genre_count[key] = @@genre_count.count}
