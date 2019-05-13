@@ -30,6 +30,8 @@ class Song
     @@count
   end
   
+  #keys = name of each genre
+  
   def genre_count
     sorted_hash = {}
       @@genres.each { |key, value| sorted_hash[key] = value.sort }
