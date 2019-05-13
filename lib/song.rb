@@ -18,6 +18,6 @@ class Song
   end
   
   def artists
-    @@artists << artist
+    @@artists << @artist
   end
 end
