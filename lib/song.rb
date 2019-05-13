@@ -37,11 +37,16 @@ class Song
   def self.genre_count
     count = 0
       while count < @@genres.length
-      if 
-      @@genres.each do |key, value| 
-        
-        @@genre_count[key] = @@genre_count.count
-        
+      if @@genre_count[@@genres[count]]
+        @@genre_count[@@genres[count]] += 1
+      else  
+        @@genre_count[@@genres[count]] = 1
+      end
+      count += 1
     return @@genre_count
   end
 end
+
+
+
+      #@@genres.each { |key, value| @@genre_count[key] = @@genre_count.count}
