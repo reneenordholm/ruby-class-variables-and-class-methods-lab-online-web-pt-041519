@@ -7,7 +7,6 @@ class Song
   
   @@genre_count = {}
   
-  
   def initialize(name, artist, genre)
     @@count += 1
     @name = name
@@ -31,10 +30,10 @@ class Song
   end
   
   #keys = name of each genre
+  #values = number of songs in genre
   
   def genre_count
-    sorted_hash = {}
-      @@genres.each { |key, value| sorted_hash[key] = value.sort }
-    return sorted_hash
+      @@genres.each { |key, value| @@genre_count[key] = value.sort }
+    return @@genre_count
   end
 end
